@@ -1,6 +1,7 @@
 MIT License
 
-Copyright (c) 2022 QuixR
+Copyright (c) 2022 Previously: Quixr, This fork is maintained by JaydenDev 
+and all new or modified code is my code.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

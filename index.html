@@ -3,54 +3,56 @@
 
 <head>
 
-    <!-- Basic Page Needs
+	<!-- Basic Page Needs
   	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8">
-    <title>JaydenDev Search</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<meta charset="utf-8">
+	<title>JaydenDev Search</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    <!-- Mobile Specific Metas
+	<!-- Mobile Specific Metas
   	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- FONT
+	<!-- FONT
   	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-    <!-- CSS
+	<!-- CSS
   	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/styling.css">
 
-    <!-- JS
+	<!-- JS
   	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="/js/index.js"></script>
+	<script src="/js/index.js"></script>
 
-    <!-- Favicon
+	<!-- Favicon
   	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/svg" href="images/favicon.svg">
+	<link rel="icon" type="image/svg" href="images/favicon.svg">
 
 </head>
 
 <body>
 	<div class="container center" style="margin-top: 15%;">
-		<h1 style="font-size: 4.5em; text-shadow: 1px 1px #000000;">Search</h1>
+		<h1 style="font-size: 4.5em;">Search</h1>
 		<input type="search" name="search" id="search" placeholder="Search" onkeyup="checkkey()" style="width: 70%">
 		<input class="button-primary" id="submit" type="submit" value="Submit" onclick="search()">
 		<button id="engine" class="button-primary engine" onclick="switchEngine()">Google</button>
 		<div class="row">
 			<a href="https://github.com"><button class="button-primary">GitHub</button></a>
 			<a href="https://repl.it"><button class="button-primary">Replit</button></a>
-			<a href="https://github.com/JaydenDev/quixrsearch.github.io"><button class="button-primary">Open Source</button></a>
+			<a href="license.txt"><button class="button-primary">License</button></a>
+			<a href="https://github.com/JaydenDev"><button class="button-primary">Open
+					Source</button></a>
 		</div>
 	</div>
 
 	<!-- End Document
 	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="./js/listeners.js"></script>
-	  <script src="/js/facts.js"></script>
-	  <script src="/js/background.js"></script>
+	<script src="./js/listeners.js"></script>
+	<script src="/js/facts.js"></script>
 </body>
 
 </html>
