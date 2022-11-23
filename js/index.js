@@ -1,4 +1,7 @@
 
+var analytics = 'https://cdn.counter.dev/script.js'
+var dataid = '87c625de-41f2-44eb-9308-c1ab8e5d09a2'
+var utoffset = '-6'
 var google = "https://www.google.com/search?q=";
 var ddg = "https://duckduckgo.com/?q=";
 var eng = google;
@@ -39,3 +42,21 @@ function switchEngine() {
     document.getElementById("engine").innerHTML = engine;
 
 }
+
+var openConsentForm = localStorage.getItem('dontOpenConsentForm');
+
+if (!openConsentForm) {
+    var answer = confirm("Would you like to send analytics? This sends information such as browser, operating system, and how often you visit this site. It helps us improve the experience!")
+}
+
+window.addEventListener('load', function () {
+    if (answer) {
+        var myScript = document.createElement('script');
+        myScript.setAttribute('src', analytics);
+        myScript.setAttribute('data-id', dataid);
+        myScript.setAttribute('data-utcoffset', utoffset);
+        console.log(answer)
+        document.body.appendChild(myScript);
+    }
+});
+localStorage.setItem('dontOpenConsentForm', true)
