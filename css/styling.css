@@ -3,11 +3,17 @@
         background-color: white;
         color: black;
     }
+    input {
+        color: white;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
     body {
         background-color: black;
         color: white;
+    }
+    input {
+        color: black;
     }
 }
