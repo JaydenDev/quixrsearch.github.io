@@ -56,7 +56,7 @@ window.addEventListener('load', function () {
         myScript.setAttribute('data-id', dataid);
         myScript.setAttribute('data-utcoffset', utoffset);
         console.log(answer)
-        document.body.appendChild(myScript);
+        document.head.appendChild(myScript);
     }
 });
 localStorage.setItem('dontOpenConsentForm', true)
